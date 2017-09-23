@@ -1,9 +1,10 @@
 #include "Node.h"
 
+int Node::compteur = 0;
 
-
-Node::Node()
+Node::Node() : id(compteur)
 {
+	compteur++;
 }
 
 
