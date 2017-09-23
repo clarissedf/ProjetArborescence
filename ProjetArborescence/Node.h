@@ -1,12 +1,19 @@
 #pragma once
+#include <map>
+#include <string>
+#include "Attribute.h"
+
 class Node
 {
 private:
 	static int compteur;
 	int id;
+	std::map<std::string, Attribute> listAttributes;
 
 public:
 	Node();
-	~Node();
+	virtual ~Node();
+	void addAttribute(Attribute att);
+	Attribute getAttribute(std::string name) const;
 };
 
