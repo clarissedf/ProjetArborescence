@@ -1,5 +1,7 @@
 #pragma once
-class Containable
+#include "Container.h"
+
+class Containable : public Container
 {
 public:
 	Containable();
