@@ -110,6 +110,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Attribute.cpp" />
     <ClCompile Include="Containable.cpp" />
     <ClCompile Include="Container.cpp" />
     <ClCompile Include="Main.cpp" />
@@ -117,6 +118,7 @@
     <ClCompile Include="Part.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Attribute.h" />
     <ClInclude Include="Containable.h" />
     <ClInclude Include="Container.h" />
     <ClInclude Include="Node.h" />
