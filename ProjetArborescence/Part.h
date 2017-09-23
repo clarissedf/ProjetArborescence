@@ -1,5 +1,7 @@
 #pragma once
-class Part
+#include "Container.h"
+
+class Part : public Container
 {
 public:
 	Part();
