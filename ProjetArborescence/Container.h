@@ -8,7 +8,7 @@ class Container : public Containable
 public:
 	Container();
 	~Container();
-	std::vector<Containable> getContained();
+	std::vector<Containable> getContained() const;
 	void addContained(Containable containable);
 	void setContained(std::vector<Containable> lContained);
 

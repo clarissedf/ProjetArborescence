@@ -43,3 +43,10 @@ std::string Node::getDescription() const
 {
 	return desc;
 }
+
+
+int Node::getId() const
+{
+	return this->id;
+}
+
