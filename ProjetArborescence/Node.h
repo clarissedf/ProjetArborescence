@@ -14,6 +14,9 @@ public:
 	Attribute getAttribute(std::string name) const;
 	int getId() const;
 
+protected:
+	void setDescription(std::string);
+
 private:
 	static int compteur;
 	int id;

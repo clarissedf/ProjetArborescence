@@ -1,7 +1,7 @@
 #pragma once
-#include "Container.h"
+#include "Node.h"
 
-class Containable
+class Containable : public Node
 {
 public:
 	Containable();
