@@ -14,12 +14,12 @@ public:
 	int getId() const;
 
 protected:
-	void setDescription(std::string);
+	std::string desc;
+	virtual void setDescription(std::string) = 0;
 
 private:
 	static int compteur;
 	int id;
-	std::string desc;
 	std::map<std::string, Attribute> listAttributes;
 
 };

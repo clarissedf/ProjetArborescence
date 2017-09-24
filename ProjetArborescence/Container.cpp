@@ -15,6 +15,11 @@ Container::~Container()
 {
 }
 
+void Container::setDescription(std::string desc)
+{
+	this->desc = desc;
+}
+
 
 std::vector<Containable> Container::getContained() const
 {
@@ -22,7 +27,7 @@ std::vector<Containable> Container::getContained() const
 }
 
 
-void Container::addContained(Containable containable)
+void Container::addContained(const Containable& containable)
 {
 	this->lContained.push_back(containable);
 }

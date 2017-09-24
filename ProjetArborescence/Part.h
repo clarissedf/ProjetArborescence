@@ -6,5 +6,8 @@ class Part : public Containable
 public:
 	Part();
 	~Part();
+
+protected:
+	virtual void setDescription(std::string desc);
 };
 
