@@ -18,7 +18,7 @@ int main(int argc, char* argv[]) {
 	std::cout << a1.getName() << std::endl;
 	std::cout << a1.getValue() << std::endl;
 
-	/* Node Class */
+	/* Node Class : abstract
 	std::cout << "Testing Node Class" << std::endl;
 
 	Node n1;
@@ -26,7 +26,7 @@ int main(int argc, char* argv[]) {
 
 	n1.addAttribute(a1);
 	Attribute a2 = n1.getAttribute("newAttribute");
-	std::cout << a2.getValue() << std::endl;
+	std::cout << a2.getValue() << std::endl; */
 
 	system("pause");
 	return 0;
