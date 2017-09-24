@@ -21,19 +21,19 @@ void Container::setDescription(std::string desc)
 }
 
 
-std::vector<Containable> Container::getContained() const
+std::vector<Containable&> Container::getContained() const
 {
 	return this->lContained;
 }
 
 
-void Container::addContained(const Containable& containable)
+void Container::addContained(Containable& containable)
 {
 	this->lContained.push_back(containable);
 }
 
 
-void Container::setContained(std::vector<Containable> lContained)
+void Container::setContained(std::vector<Containable&> lContained)
 {
 	this->lContained = lContained;
 }
