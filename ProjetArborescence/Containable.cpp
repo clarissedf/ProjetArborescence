@@ -2,7 +2,7 @@
 
 
 
-Containable::Containable()
+Containable::Containable() : Node()
 {
 }
 

@@ -2,8 +2,12 @@
 
 
 
-Container::Container()
+Container::Container() : Containable()
 {
+	int tid = this->getId();
+	std::string desc("Ceci est un container (noeud), ID=");
+	desc.append(std::to_string(tid));
+	this->setDescription(desc);
 }
 
 
@@ -12,7 +16,7 @@ Container::~Container()
 }
 
 
-std::vector<Containable> Container::getContained()
+std::vector<Containable> Container::getContained() const
 {
 	return this->lContained;
 }

@@ -39,6 +39,13 @@ Attribute Node::getAttribute(std::string name) const
 //	return (o_att != NULL) ? 0 : -1;
 //}
 
+
+void Node::setDescription(std::string description)
+{
+	this->desc = description;
+}
+
+
 std::string Node::getDescription() const 
 {
 	return desc;
