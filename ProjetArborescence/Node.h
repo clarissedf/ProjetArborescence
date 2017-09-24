@@ -10,7 +10,7 @@ public:
 	~Node();
 	std::string getDescription() const;
 	std::map<std::string, Attribute> listAttributes;
-	void addAttribute(Attribute att);
+	void _declspec(dllimport) addAttribute(Attribute att);
 	Attribute getAttribute(std::string name) const;
 
 private:
