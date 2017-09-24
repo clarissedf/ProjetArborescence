@@ -38,3 +38,8 @@ Attribute Node::getAttribute(std::string name) const
 //	}
 //	return (o_att != NULL) ? 0 : -1;
 //}
+
+int Node::getId() const
+{
+	return this->id;
+}

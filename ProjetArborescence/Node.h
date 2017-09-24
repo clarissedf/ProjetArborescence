@@ -12,6 +12,7 @@ public:
 	std::map<std::string, Attribute> listAttributes;
 	void addAttribute(Attribute att);
 	Attribute getAttribute(std::string name) const;
+	int getId() const;
 
 private:
 	static int compteur;
