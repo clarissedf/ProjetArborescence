@@ -30,10 +30,11 @@ std::string Attribute::getValue() const
 
 void Attribute::setName(std::string name)
 {
+	_name = name;
 
 }
 
 void Attribute::setValue(std::string value)
 {
-
+	_value = value;
 }

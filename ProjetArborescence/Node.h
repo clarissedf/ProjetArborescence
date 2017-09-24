@@ -9,8 +9,7 @@ public:
 	Node();
 	~Node();
 	std::string getDescription() const;
-	std::map<std::string, Attribute> listAttributes;
-	void _declspec(dllimport) addAttribute(Attribute att);
+	void addAttribute(Attribute att);
 	Attribute getAttribute(std::string name) const;
 	int getId() const;
 
@@ -18,6 +17,7 @@ private:
 	static int compteur;
 	int id;
 	std::string desc;
+	std::map<std::string, Attribute> listAttributes;
 
 };
 
